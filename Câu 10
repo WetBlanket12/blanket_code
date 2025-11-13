@@ -1,0 +1,7 @@
+function tinhTrungBinhCong(arr) {
+  if (arr.length === 0) return 0;
+  const tong = arr.reduce((sum, val) => sum + val, 0);
+  return tong / arr.length;
+}
+
+console.log(tinhTrungBinhCong([11, 12, 16, 18]));
